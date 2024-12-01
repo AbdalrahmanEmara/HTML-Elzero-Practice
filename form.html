@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<head>
+    <title>Form</title>
+</head>
+<body>
+    <h1>Book Store</h1>
+    <p>This is my Book Store</p>
+    <form action="" method="get" novalidate target="_blank">
+        
+        <input type="hidden" value="5532@!$$88*43" name="id">
+        <div>
+            <label>User Name</label>
+            <input type="text" required placeholder="username" name="user">
+        </div>
+        <br>
+
+        <div>
+            <label>Subject</label>
+            <input type="text" name="sub">
+        </div>
+        <br>
+
+        <div>
+            <label>Password</label>
+            <input type="password" required placeholder="write a complex password" name="pass">
+        </div>
+        <br>
+
+        <div>
+            <label>Email</label>
+            <input type="email" required placeholder="write valid Email" value="emara@nn.sa" name="mail">
+        </div>
+        <br>
+
+        <div>
+            <label>Range</label>
+            <input type="range" name="range" min="0" max="100" step="20" value="0">
+        </div>
+        <br>   
+
+        <div>
+            <label>Color</label>
+            <input type="color" name="color">
+        </div>
+        <br>
+
+        <div>
+            <label for="num">Number</label>
+            <input type="number" id="num" name="number" min="10" max="100" step="5">
+        </div>
+        <br>
+
+        <!-- LESSON 29: Radio & Checkbox 
+         
+            radio => choose one option
+            checkbox => choose list from options
+        -->
+        <div>
+            <input type="radio" id="win" name="os" value="Windows" checked>
+            <label for="win">Windows</label>
+        </div>
+        <br>
+
+        <div>
+            <input type="radio" id="L" name="os" value="Linux">
+            <label for="L">Linux</label>
+        </div>
+        <br>
+
+        <div>
+            <input type="radio" id="M" name="os" value="Mac">
+            <label for="M">Mac</label>
+        </div>
+        <br>
+
+        <div>
+            <input type="checkbox" id="win1" name="os" value="Windows" checked>
+            <label for="win1">Windows</label>
+        </div>
+        <br>
+
+        <div>
+            <input type="checkbox" id="L1" name="os" value="Linux">
+            <label for="L1">Linux</label>
+        </div>
+        <br>
+
+        <div>
+            <input type="checkbox" id="M1" name="os" value="Mac">
+            <label for="M1">Mac</label>
+        </div>
+        <br>
+
+        <!-- LESSON 30: select & textarea -->
+        
+        <label for="book">Select Book: </label>
+        <select name="book" id="book" multiple>
+            <optgroup label="romantic books">
+                <option value="1">book 1</option>
+                <option value="2">book 2</option>
+                <option value="3" selected>book 3</option>
+            </optgroup>
+            <optgroup label="politic books">
+                <option value="4">book 4</option>
+                <option value="5">book 5</option>
+                <option value="6">book 6</option>
+            </optgroup>
+        </select>
+        <br>
+        <br>
+
+        <textarea name="subject" cols="10" rows="15" placeholder="write here"></textarea>
+        <br>
+
+        
+        
+        <!-- LESSON 31: File,Search,URL,Time -->
+        <div>
+            <label>File</label>
+            <input type="file" name="file">
+            <hr>
+        </div>
+        <div>
+            <label>Search</label>
+            <input type="search" name="search">
+            <hr>
+        </div>
+        <div>
+            <label>URL</label>
+            <input type="url" name="url">
+            <hr>
+        </div>
+        <div>
+            <label>Date</label>
+            <input type="date" name="date">
+            <hr>
+        </div>
+        <div>
+            <label>Date</label>
+            <input type="date" name="date">
+            <hr>
+        </div>
+        <div>
+            <label>Month</label>
+            <input type="month" name="month">
+            <hr>
+        </div>
+        <div>
+            <label>Time</label>
+            <input type="time" name="time">
+            <hr>
+        </div>
+
+        <div>
+            <input list="Programming" name="prog">
+            <datalist id="Programming">
+                <option value="Python"></option>
+                <option value="Php"></option>
+                <option value="C"></option>
+                <option value="C#"></option>
+                <option value="C++"></option>
+            </datalist>
+        </div>
+        <br>
+
+        <input type="submit">
+        <input type="reset">
+
+
+
+    </form>
+
+    <!-- LESSON 32 -->
+     <!--
+        novalidate ==> send data in any case to test, not important to be true values
+        target="_blank" ==> when you do submit, your data still here and the new tab open with empty data
+        datalist ==> like select but you can search for specific options
+     -->
+
+
+</body>

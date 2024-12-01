@@ -1,0 +1,80 @@
+<!-- FOR select the version html 
+     Must write it in any page you write with html -->
+<!DOCTYPE html>
+
+<html>  is main element , to close it </html>
+<html>
+    <head>
+                        metadata
+                        information about the page
+
+            <meta /> self closed tag
+
+        <meta charset="UTF-8" />        // the type of content that shown in page
+        <meta name="describtion" content="This is My Book Store" /> 
+        <link rel="stylesheet" href="">
+            rel is the relationship file and this page
+        <style> css elements <style/>
+        <script> javascript elements <script/>
+
+        <!--
+                aterepute can take between single and double quoat
+                and if it one word can write without quot 
+                name = description
+                name = "description"
+                content = "this is"
+                content = 'this is' 
+        -->
+    </head>
+
+    <body>
+        all the element you see in the page
+        
+        Heading
+        h1 - h6
+    
+    </body>
+</html>    
+
+lesson 10# (elements Attributes)
+
+Global attributes : attrib can use it on any element.
+element attributes : attrib special for specific element 
+                --> like : <link rel="stylesheet" href="">
+                the att is rel & href 
+
+lesson 11# (Formatting elements)
+
+        <b> bold text <b/>
+
+    b -> Bold
+    strong -> Bold & important
+    i -> Italic 
+    em -> Emphasized (Bold & important)
+    mark -> highlighted text
+    u -> underline
+    small => smaller text
+    del => deleted text
+    ins => inserted text
+    sub => subscript
+    sup => superscript
+
+lesson 12# (links Anchor Tag)
+<a href="link_address"> Name_shown </a>
+    href : hyper text refrence.
+ex: <a href="https://codeforces.com/">Codeforces</a> 
+        <!-- link with a:inline elements: side by side -->
+        <a href="https://codeforces.com/", title="Go To Codeforces">Codeforces</a> 
+        <!--title: show when you point on the link -->
+        <a href="https://codeforces.com/profile/Emaraa" target="_blank">Emara_Codeforces</a> 
+            <!--_blank for open link in another tap-->
+        <a href="assing7.html", target="_blank">assing7</a>
+            <!--we can go to another bage on our Project-->
+        <a href="#emara">Go_paragraph</a>
+            <!-- href="#id_for_parag" to go to it -->
+        <a href="mailto:medoemara104@gmail.com">Contact bro</a> 
+            <!-- to send message to specific email -->
+
+
+Some Facts
+    HTML is Not Case Sensitive

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<head>
+    <title>
+        Audio Track
+    </title>
+</head>
+<body>
+    <h1>Audio Test</h1>
+    <audio autoplay controls loop muted>
+        <source src="media/Stock1.mp3" type="audio/mpeg">
+        <source src="media/Stock1.ogg" type="audio/ogg">
+        <source src="media/Stock1.wav" type="audio/wav">
+        Your browser does not support the audio element.
+    </audio>
+
+    <h2>Video Test</h2>
+    <video controls autoplay loop muted width="400" height="700" poster="imgs/home/readnovels2.jpg">
+        <source src="media/baby.mp4" type="video/mp4">
+        <source src="media/baby.ogg" type="video/ogg">
+        The browser does not support the video element.
+        <track src="en.vtt" kind="subtitles" srclang="en" label="English">
+        <track src="fr.vtt" kind="subtitles" srclang="fr" label="Frensh">
+    </video>
+</body>

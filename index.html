@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html>
+    <!-- head contains metadata information about the page -->
+    <head>
+        <meta charset="UTF-8" />
+        <title>Book Store</title>
+        <meta 
+            name = description
+            content = "This is My Book Store" />
+            
+        <!-- This is a comment -->
+        <style>  </style>
+        <script> </script>
+        <link rel="stylesheet" href="">
+    </head>
+
+
+    <!-- body contains all the element you see in the page -->
+    <body>
+        <h1> Book Store </h1> <!-- just one h1 -->
+        <h2> Chapter Title </h2>
+        <h3> Story Title </h3>
+
+        <!--
+            b -> Bold
+            strong -> Bold & important
+            i -> Italic 
+            em -> Emphasized (Bold & important)
+            mark -> highlighted text
+            u -> underline
+            small => smaller text
+            del => deleted text
+            ins => inserted text
+            sub => subscript
+            sup => superscript
+        -->
+
+        This is <b>My Book Store</b>, welcome.
+        <img src="imgs/home/istockphoto-1129874863-612x612.jpg" alt="" width="500px" height="200px">
+
+        <p> This is <strong>My First Paragraph</strong> </p>
+        <p> This is My First <i>Paragraph</i> </p>
+        <p> This is My First <em>Paragraph</em></p>
+        <p> This is My First <mark>Paragraph</mark> </p>
+        <p> This is My First <small>Paragraph</small> </p>
+        <p> Price:<del> 200$</del> 160$ </p>
+        <p> This is My First <ins> added text </ins>  </p>
+        <p> This is My First <i>Paragraph</i> </p>
+        <p> H<sub>2</sub>O </p>
+        <p> 10<sup>3</sup> </p>
+
+        <!-- link with a:inline elements: side by side -->
+        <a href="https://codeforces.com/", title="Go To Codeforces">Codeforces</a> 
+        <!--title: show when you point on the link -->
+        <a href="https://codeforces.com/profile/Emaraa" , title="go to emara codeforces", target="_blank">Emara_Codeforces</a> 
+            <!--_blank for open link in another tap-->
+        <a href="assing7.html", target="_blank">assing7</a>
+            <!--we can go to another bage on our Project-->
+        <a href="#emara">Go_paragraph</a>
+            <!-- href="#id_for_parag" to go to it -->
+        <a href="mailto:medoemara104@gmail.com">Contact bro</a> 
+            <!-- to send message to specific email -->
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident assumenda explicabo corporis deserunt iste, molestias dolore at earum necessitatibus, tenetur vero dolorum, vitae magnam inventore minus nemo animi ratione maxime?</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident assumenda explicabo corporis deserunt iste, molestias dolore at earum necessitatibus, tenetur vero dolorum, vitae magnam inventore minus nemo animi ratione maxime?</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident assumenda explicabo corporis deserunt iste, molestias dolore at earum necessitatibus, tenetur vero dolorum, vitae magnam inventore minus nemo animi ratione maxime?</p>
+        <p id="emara">Emara Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident assumenda explicabo corporis deserunt iste, molestias dolore at earum necessitatibus, tenetur vero dolorum, vitae magnam inventore minus nemo animi ratione maxime?</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident assumenda explicabo corporis deserunt iste, molestias dolore at earum necessitatibus, tenetur vero dolorum, vitae magnam inventore minus nemo animi ratione maxime?</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident assumenda explicabo corporis deserunt iste, molestias dolore at earum necessitatibus, tenetur vero dolorum, vitae magnam inventore minus nemo animi ratione maxime?</p>
+        
+        <!--
+            lesson 13
+            src = Source
+            alt = Alternate Text (when image doesnot show)
+        -->
+        <!-- ../ to go back and get element -->
+        <img src="../photo_2023-08-18_23-00-11.jpg" alt="Will Not Show" width="300px" height="450px">   
+        <!-- best way to operate with width and height in css --> 
+                
+        <!--
+            lesson 14
+            ul => unordered list        
+            li => List Item
+            ol => ordered list
+        -->
+
+        <!-- Sebarator -->
+        <!--
+            reversed => reversing order 3->2->1
+            start="position" => start counting from this position
+            type ="" => Type of ordering "1" | "a" | "A" | "i" | "I"
+        -->
+        <ul>
+            <li>Html</li>
+            <li>CSS</li>
+            <li>
+                JS 
+                <ul>
+                    <li>Angular</li>
+                    <li>Reactjs</li>
+                    <li>Vuejs</li>
+                </ul>
+            </li>
+        </ul>
+        <ol type="i" reversed>
+            <li>name</li>
+            <li>address</li>
+            <li>age</li>
+        </ol>
+        <ol>
+            <!-- we can push the start in li -->
+            <li value="50">name</li> 
+            <li>address</li>
+            <li>age</li>
+        </ol>
+        <!-- Sebarator -->
+        <!--
+            dl => describtion list
+            dt => Term
+            dd => describtion Term
+        -->
+        <dl>
+            <dt>HTML</dt>
+            <dd>The Language of the web</dd>
+            <dd>easy in coding</dd>
+            <dt>CSS</dt>
+            <dd>The Language of the visuals</dd>
+        </dl>
+
+        <!-- LESSON 15 Table -->
+        <!--
+                Table
+            thead => table head
+            tbody => table body
+            tfoot => table foot (last row in table)
+            tr => table row     
+            td => table data cell
+            th => table header cell
+        -->
+
+        <table border="1">
+            <caption>Student Marks</caption>
+            <thead>
+                <tr>
+                    <th>First_name</th>
+                    <th>Last_name</th>
+                    <th>Marks</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Omar</td>
+                    <td>Emara</td>
+                    <td>80</td>
+                </tr>
+                <tr>
+                    <td>Omar</td>
+                    <td>Emara</td>
+                    <td>80</td>
+                </tr>
+                <tr>
+                    <td>Omar</td>
+                    <td>Emara</td>
+                    <td>80</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <!-- for merging -->
+                    <td colspan="2">Table</td>
+                    <td>240</td>
+                </tr>
+            </tfoot>
+            
+        </table>
+
+        <!-- LESSON 16 Span & Break & Horizontal Rule -->
+        <!--
+            span ==> is inline element but the benefit is you can operate with this
+                     element in css
+
+            <br /> ==> end line
+            <hr>   ==> draw line
+        -->
+        <p>this is best way to <span>read</span> <br /> </p>
+        Book
+        <br /> Test
+        <hr>
+        <p>This Is Second Paragraph</p>
+        
+        <!-- LESSON 17 Div & How To Use -->
+        <!-- div ==> is a container of elements -->
+        <div>
+            <div class="romantic">
+                <div class="book">
+                    <h3>Book Title</h3>
+                    <p>This book is about blabla bla</p>
+                    <span>price = 100$</span>
+                </div>
+                <div class="book">
+                    <h3>Book Title</h3>
+                    <p>This book is about blabla bla</p>
+                    <span>price = 100$</span>
+                </div>
+                <div class="book">
+                    <h3>Book Title</h3>
+                    <p>This book is about blabla bla</p>
+                    <span>price = 100$</span>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="police">
+                <div class="book">
+                    <h3>Book Title</h3>
+                    <p>This book is about blabla bla</p>
+                    <span>price = 100$</span>
+                </div>
+                <div class="book">
+                    <h3>Book Title</h3>
+                    <p>This book is about blabla bla</p>
+                    <span>price = 100$</span>
+                </div>
+                <div class="book">
+                    <h3>Book Title</h3>
+                    <p>This book is about blabla bla</p>
+                    <span>price = 100$</span>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="history">
+                <div class="book">
+                    <h3>Book Title</h3>
+                    <p>This book is about blabla bla</p>
+                    <span>price = 100$</span>
+                </div>
+                <div class="book">
+                    <h3>Book Title</h3>
+                    <p>This book is about blabla bla</p>
+                    <span>price = 100$</span>
+                </div>
+                <div class="book">
+                    <h3>Book Title</h3>
+                    <p>This book is about blabla bla</p>
+                    <span>price = 100$</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- LESSON 18 HTML Entities -->
+        <div>This is my <p> div 3 </div>
+        <!-- i want to print <p> -->    
+        <div>This is my &lt;p&gt; div 3 </div>
+        <div> &radic;9 = 3 </div>
+        
+        <!-- LESSON 19 Semantic Elements -->
+        <!--
+            to not use nested div
+            now in html 5 there are semantic elements for diffrent usage
+            <header>
+            <main>
+            <article>
+            <nav> ==> navigation bar
+            <footer>
+        -->
+
+        <!-- LESSON 20 Layout with Div & Classes -->
+        <!-- LESSON 21 USE Semantic Elements instead of divs-->
+
+        <header>
+            <h2>Logo</h2>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Services</li>
+                <li>Contact Us</li>
+            </ul>
+        </header>
+        <hr>
+    
+        <nav>
+            <li>All</li>
+            <li>Today deals</li>
+            <li>Customer Services</li>
+            <li>Register</li>
+            <li>Log In</li>
+        </nav>
+        <hr>
+    
+        <section>
+            <figure>
+                <img src="imgs/home/istockphoto-1129874863-612x612.jpg" alt="">
+                <figcaption>Caption Of The Image</figcaption>
+            </figure>
+        </section>
+        <aside>
+            Sidebar
+        </aside>
+        <hr>
+    
+        <footer>
+            Footer
+        </footer>
+
+        <!--
+            Cellpadding ==> Defines the space between the content of a cell and its border.
+            Applies to the individual cell.
+            Syntax: <table cellpadding="value">
+
+            Cellspacing ==> Defines the space between the borders of adjacent cells.
+            Applies to the entire table.
+            Syntax: <table cellspacing="value">
+        -->
+
+        <br> <br> <br> <br> <br>
+        <!-- LESSON 22: Audio -->
+        <audio controls autoplay loop muted>
+            <!-- mp3 is supported in all modern browsers so mp3 is enough -->
+            <source src="media/Stock1.mp3" type="audio/mpeg">
+            <source src="media/Stock1.mp3" type="audio/mpeg">
+            <source src="media/Stock1.mp3" type="audio/mpeg">
+            Your Browser does not support Audio Tags
+        </audio>
+        <br> <hr> <br>
+
+        <!-- LESSON 23: Video -->
+        <video controls width="300" height="700" autoplay loop muted poster="imgs/home/istockphoto-1129874863-612x612.jpg">
+            <source src="media/baby.mp4" type="video/mp4">
+            <source src="media/baby.ogg" type="video/ogg">
+            Your Browser Does Not Support Video Tags
+            <!-- i do not have subtitle file but this is way to add sub -->
+            <track src="my_file_en.vtt" kind="subtitles" srclang="en" label="English">
+            <track src="my_file_it.vtt" kind="subtitles" srclang="it" label="Italian">
+        </video>    
+
+        <!-- LESSON 24: Form Part1, Input type & Label -->
+        <form>
+            <div>
+                <label>User Name</label>
+                <input type="text">
+            </div>
+            <br>
+            <div>
+                <label>Password</label>
+                <input type="password">
+            </div>
+            <br>
+            <input type="submit">
+        </form>
+
+        <!-- LESSON 35 -->
+        
+        <form action="">
+            <input type="text" />
+            <button>Send</button>
+            <button>Reset</button>
+        </form>
+
+        <!-- LESSON 35,36: Aria & Screen Readers -->
+        <!-- 
+            aria => accessible rich internet applications
+
+        -->
+
+        <h1>Test</h1>
+        <form action="">
+            <label for="us">Username</label>
+            <input type="text" name="user" id="us"/>
+            <button>Send</button>
+            <button>Reset</button>
+        </form>
+
+        <form action="">
+            <h2>Choose Skills</h2>
+            <label for="sk1">Skill One</label>
+            <input type="checkbox" name="skill_one" id="sk1" checked>
+            <label for="sk2">Skill Two</label>
+            <input type="checkbox" name="skill_two" id="sk2">
+            <label for="sk3">Skill Three</label>
+            <input type="checkbox" name="skill_Three" id="sk3">
+        </form>
+
+        <hr>
+        <div role="checkbox" aria-checked="true" tabindex="0" aria-labelledby="p1">Plan One</div>
+        <label id="p1">Plan One Label</label>
+        <div role="checkbox" tabindex="0">JavaScribt</div>
+        <div role="checkbox" tabindex="0">Python</div>
+        
+    </body>
+</html>

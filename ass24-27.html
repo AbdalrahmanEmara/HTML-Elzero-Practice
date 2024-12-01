@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<head>
+    <title>
+        Form Task
+    </title>
+</head>
+<body>
+    <h1>Form Task</h1>
+    <form action="test.py" method="post">
+        <input type="hidden" name="id" value="558849@31$#">
+        <div>
+            <label>Username</label> <br>
+            <input type="text" required placeholder="username" name="username" value="abdelrahman" readonly>
+        </div>
+        <hr>
+        <div>
+            <label>Password</label> <br>
+            <input 
+             type="password"
+             placeholder="write a complex password" 
+             name="password" 
+             minlength="8" 
+             maxlength="16">
+        </div>
+        <hr>
+        <div>
+            <label>Mobile</label> <br>
+            <input type="number" placeholder="Valid Mobile_Number" name="Mobile">
+        </div>
+        <hr>
+        <div>
+            <label>Email</label> <br>
+            <input type="email" required placeholder="write valid Email" name="mail" value="emara@gg" disabled>
+        </div>
+        <hr>
+        <div>
+            <label>Subject</label> <br>
+            <input type="text" placeholder="subject" name="subj" autofocus>
+        </div>
+        <hr>
+        <input type="submit" value="Send Data">
+        <input type="reset" value="Empty Form">
+    </form>
+    <form>
+        <h2>Test Range</h2>
+        <input type="range" name="test" value="400" min="100" max="500" step="50">
+    </form>
+</body>
